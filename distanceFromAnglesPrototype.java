@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class rovDistanceTestingMain{
 	/**
 	 * Finds the lengthA using law of sines.
-	 * @param a	Degree across from lengthA.
+	 * @param a Degree across from lengthA.
 	 * @param b Degree across from lengthB. 
 	 * @param c The known distance between the lasers.
 	 * @param lengthC 
@@ -15,7 +15,7 @@ public class rovDistanceTestingMain{
 	
 	/**
 	 * Finds the lengthB using law of sines.
-	 * @param a	Degree across from lengthA.
+	 * @param a Degree across from lengthA.
 	 * @param b Degree across from lengthB. 
 	 * @param c The known distance between the lasers.
 	 * @return The length of lengthB.
@@ -28,7 +28,7 @@ public class rovDistanceTestingMain{
 	 * Finds length x using Cosine and lengthA.
 	 * @param lengthA The value of lengthA as calculated previously.
 	 * @param degreeZeta The value of degreeZeta as calculated previously.
-	 * @return
+	 * @return length x
 	 */
 	private static double getLengthX(double lengthA, double degreeZeta) {
 		return lengthA*Math.cos(degreeZeta);
@@ -38,7 +38,7 @@ public class rovDistanceTestingMain{
 	 * Finds length x using Cosine and lengthB.
 	 * @param lengthA The value of lengthA as calculated previously.
 	 * @param degreeZeta The value of degreeZeta as calculated previously.
-	 * @return
+	 * @return lengthx
 	 */
 	private static double getLengthXAlt(double lengthB, double degreeGamma) {
 		return lengthB*Math.cos(degreeGamma);
@@ -48,7 +48,7 @@ public class rovDistanceTestingMain{
 	 * Finds length y using Sine and lengthB.
 	 * @param lengthA The value of lengthA as calculated previously.
 	 * @param degreeZeta The value of degreeZeta as calculated previously.
-	 * @return
+	 * @return length Y
 	 */
 	private static double getLengthYAlt(double lengthB, double degreeGamma) {
 		return lengthB*Math.sin(degreeGamma);
@@ -58,7 +58,7 @@ public class rovDistanceTestingMain{
 	 * Finds length y using Sine and lengthA.
 	 * @param lengthA The value of lengthA as calculated previously.
 	 * @param degreeZeta The value of degreeZeta as calculated previously.
-	 * @return
+	 * @return length Y
 	 */
 	private static double getLengthY(double lengthA, double degreeZeta) {
 		return lengthA*Math.sin(degreeZeta);
