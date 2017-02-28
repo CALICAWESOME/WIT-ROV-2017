@@ -1,5 +1,4 @@
 import pygame
-import os
 from time import sleep
 
 AXIS_DECIMAL_PLACES = 3
@@ -20,7 +19,7 @@ def main():
     while j:
         pygame.event.pump()
         a = [str(round(j.get_axis(_), AXIS_DECIMAL_PLACES)) for _ in range(j.get_numaxes())]
-        print('\t\t'.join(a)    # print raw axis values in a rather disgusting manner
+        print('\t\t'.join(a))   # print raw axis values in a rather disgusting manner
         sleep(0.05)
 
 
