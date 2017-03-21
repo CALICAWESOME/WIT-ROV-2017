@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>surfin'</title>
+</head>
+<body>
+<h3>SURFIN'</h3>
+<table>
+<tr>
+    {% for key in data %}
+        <th>{{ key }}</th>
+    {% endfor %}
+</tr>
+<tr>
+    {% for key in data %}
+        <td>{{ data[key] }}</td>
+    {% endfor %}
+</tr>
+</table>
+</body>
+</html>
