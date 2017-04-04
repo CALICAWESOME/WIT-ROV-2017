@@ -2,6 +2,7 @@ import pygame
 from flask import Flask, render_template
 surf = Flask(__name__)
 
+#TODO: make this into a class, global vars == bad
 AXIS_NUMDIGITS = 5
 CLOCK = None
 JOYSTICKS = []
