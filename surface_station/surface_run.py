@@ -28,7 +28,7 @@ class SurfaceStation:
         return j
 
     def get_joystick_data(self):
-        """returns list of dictionaries of all axis, hat and button states of Joysticks in self.joysticks"""
+        """returns list of dictionaries of all axis, hat, and button states of Joysticks in self.joysticks"""
         _ = []
         for j in self.joysticks:
             d = {}
